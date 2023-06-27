@@ -1,0 +1,23 @@
+.align-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-leftmargin{
+    margin-left: 10px;
+}
+
+.baseButton {
+  max-width: 248px;
+  min-width: 150px;
+  width: 25%;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+.baseButton p {
+  text-transform: uppercase;
+  text-align: center;
+}

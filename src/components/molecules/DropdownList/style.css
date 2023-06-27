@@ -1,0 +1,37 @@
+.DropdownList {
+  cursor: pointer;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.DropdownListLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DropdownListLabel p:first-child {
+  margin-right: 10px;
+}
+
+.DropdownOptions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #242424;
+  transform: translate(0%, 110%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px 10px 20px;
+}
+
+.DropdownOptions li {
+  background-color: #242424;
+  margin-bottom: 20px;
+}

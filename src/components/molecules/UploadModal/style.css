@@ -1,0 +1,202 @@
+.uploadModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 750px;
+  transform: translate(-50%, -50%);
+  background-color: #242424;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.uploadModalTitle {
+  color: #64eebc;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.uploadModalDropArea {
+  border: 2px dashed #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.uploadModalDropArea p {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.uploadModalInput {
+  border: none;
+  background: inherit;
+  margin-bottom: 30px;
+}
+
+.uploadModalInput > input {
+  background-color: #242424;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  width: 60%;
+  text-align: center;
+  font-size: 22px;
+}
+.uploadModalInput > input::placeholder {
+  color: #ffffff;
+}
+
+.uploadModalButton {
+  background-color: #929292;
+  color: #000;
+  text-align: center;
+  padding: 20px 0px;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.uploadModalCompleted {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  max-width: 750px;
+  transform: translate(-50%, -50%);
+  background-color: #242424;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.uploadModalCompletedTitle {
+  color: #64eebc;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.uploadModalCompletedText {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.uploadModalCompletedButton {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px 0px;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.uploadModalCompletedButton p {
+  color: #000;
+}
+
+.uploadModalCloseButton {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.uploadModalButtonExit {
+  display: none;
+}
+
+.progressbarContainer {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.progressbarLabel {
+  margin-bottom: 20px;
+}
+
+.progressbar {
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.progressbarValue {
+  height: 100%;
+  height: 10px;
+  background-color: #64eebc;
+}
+
+@media only screen and (max-width: 960px) {
+  .uploadModal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    padding: 50px 20px;
+    margin: 0;
+    transform: translate(0%, 0%);
+  }
+
+  .uploadModalCloseButton {
+    display: none;
+  }
+  .uploadModalDropArea {
+    margin-bottom: 50px;
+  }
+
+  .uploadModalInput {
+    margin-bottom: 80px;
+  }
+
+  .uploadModalButton {
+    margin-bottom: 30px;
+  }
+
+  .uploadModalButtonExit {
+    border: solid 2px #ffffff;
+    text-align: center;
+    padding: 20px 0px;
+    width: 60%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .uploadModalCompleted {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    padding: 50px 20px;
+    margin: 0;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .uploadModalCompletedTitle {
+    margin-bottom: 30px;
+  }
+
+  .uploadModalCompletedText {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .uploadModalCompletedButton {
+    margin-top: 100px;
+  }
+
+  .uploadModalCompletedButton p {
+    color: #000;
+  }
+}
